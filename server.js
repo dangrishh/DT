@@ -12,16 +12,16 @@ function mailService() {
   let mailTransporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "danieldetorres,info@gmail.com",
+      user: "yourEmail",
 // use generated app password for gmail
-      pass: "DeTorresDaniel3000",
+      pass: "*******",
     },
   });
 
   // setting credentials
   let mailDetails = {
-    from: "danieldetorres.info@gmail.com",
-    to: "danieldetorres30@gmail.com",
+    from: "yourEmail",
+    to: "ReceiveEmail",
     subject: "Nodejs Developer",
     text: "You did it, you have to be a Celebrate!",
   };
